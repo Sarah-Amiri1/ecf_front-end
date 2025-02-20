@@ -402,36 +402,6 @@ header section {
     max-width: 50%;
 }
 
-@media (max-width: 768px) {
-    .cosplay-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cosplay-container img {
-        width: 60%;
-    }
-
-    .cosplay-container article {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 499px) {
-    #cosplay-contest {
-        padding: 40px 15px;
-    }
-
-    .cosplay-container img {
-        width: 80%;
-    }
-
-    .cosplay-container article {
-        max-width: 90%;
-    }
-}
-
-
 #partners {
     max-width: 1150px;
     margin: auto
@@ -732,3 +702,55 @@ main section h3 {
 }
 
 /*# sourceMappingURL=home.css.map */
+
+@media (max-width: 768px) {
+
+    /* Section Compétitions de Jeux Vidéo & TCG */
+    #jv-and-tcg div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #jv-and-tcg div article {
+        margin: 0;
+    }
+
+    /* Section Des invités de prestige */
+    .guests-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: fit-content;
+    }
+
+    .guests-container article {
+        flex: 1 1 100%;
+        max-width: 80%;
+    }
+
+    /* Section Un concours Cosplay */
+    .cosplay-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .cosplay-container img {
+        width: 80%;
+    }
+
+    .cosplay-container article {
+        max-width: 80%;
+    }
+
+    /* Section Partenaires */
+    #partners .partners-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #partners .partners-container div {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
