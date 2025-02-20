@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -301,6 +305,10 @@ ul {
     gap: 40px;
     align-items: center;
     padding: 15px 15px;
+}
+
+.nav2 a {
+    font-family: "Roboto Mono Regular";
 }
 
 .nav2.active {
