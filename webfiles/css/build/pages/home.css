@@ -288,14 +288,16 @@ header section {
     width: 300px;
     border: 1;
     margin: 50px;
+    border-radius: 10px;
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+    align-items: center;
+    padding: 15px 15px;
 }
-
 
 .nav2.active {
     display: block;
