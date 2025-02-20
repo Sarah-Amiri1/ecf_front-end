@@ -289,6 +289,10 @@ header section {
     border: 1;
     margin: 50px;
     border-radius: 10px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
 }
 
 ul {
@@ -301,6 +305,22 @@ ul {
 
 .nav2.active {
     display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+#burger-close {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ff3c00;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 #jv-and-tcg p,
