@@ -279,6 +279,28 @@ header section {
     max-width: 550px
 }
 
+.nav2 {
+    display: none;
+    background: #183054;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    border: 1;
+    margin: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.nav2.active {
+    display: block;
+}
+
 #jv-and-tcg p,
 #jv-and-tcg p+ul {
     padding: 0 1.25rem
